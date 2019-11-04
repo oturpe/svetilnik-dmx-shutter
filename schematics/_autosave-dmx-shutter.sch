@@ -1,0 +1,309 @@
+EESchema Schematic File Version 4
+LIBS:dmx-shutter-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L dmx-shutter-rescue:ATMEGA88PA-P IC?
+U 1 1 573C797E
+P 3000 3500
+F 0 "IC?" H 2250 4750 50  0000 L BNN
+F 1 "ATMEGA88PA-P" H 3400 2100 50  0000 L BNN
+F 2 "DIL28" H 3000 3500 50  0000 C CIN
+F 3 "" H 3000 3500 50  0000 C CNN
+	1    3000 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 573C7AE5
+P 2100 4700
+F 0 "#PWR?" H 2100 4450 50  0001 C CNN
+F 1 "GND" H 2100 4550 50  0000 C CNN
+F 2 "" H 2100 4700 50  0000 C CNN
+F 3 "" H 2100 4700 50  0000 C CNN
+	1    2100 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 4700 2100 4600
+$Comp
+L power:+5V #PWR?
+U 1 1 573C7BB7
+P 2100 2400
+F 0 "#PWR?" H 2100 2250 50  0001 C CNN
+F 1 "+5V" H 2100 2540 50  0000 C CNN
+F 2 "" H 2100 2400 50  0000 C CNN
+F 3 "" H 2100 2400 50  0000 C CNN
+	1    2100 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 2700 2100 2400
+$Comp
+L dmx-shutter-rescue:C C?
+U 1 1 573C7BD4
+P 1950 2550
+F 0 "C?" H 1850 2650 50  0000 L CNN
+F 1 "100 nF" H 1650 2450 50  0000 L CNN
+F 2 "" H 1988 2400 50  0000 C CNN
+F 3 "" H 1950 2550 50  0000 C CNN
+	1    1950 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 573C7C11
+P 1950 2700
+F 0 "#PWR?" H 1950 2450 50  0001 C CNN
+F 1 "GND" H 1950 2550 50  0000 C CNN
+F 2 "" H 1950 2700 50  0000 C CNN
+F 3 "" H 1950 2700 50  0000 C CNN
+	1    1950 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 2400 1950 2400
+$Comp
+L power:+5V #PWR?
+U 1 1 573C7DD3
+P 5350 3300
+F 0 "#PWR?" H 5350 3150 50  0001 C CNN
+F 1 "+5V" H 5350 3440 50  0000 C CNN
+F 2 "" H 5350 3300 50  0000 C CNN
+F 3 "" H 5350 3300 50  0000 C CNN
+	1    5350 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 573C7E04
+P 5250 3700
+F 0 "#PWR?" H 5250 3450 50  0001 C CNN
+F 1 "GND" H 5250 3550 50  0000 C CNN
+F 2 "" H 5250 3700 50  0000 C CNN
+F 3 "" H 5250 3700 50  0000 C CNN
+	1    5250 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3700 5250 3700
+Wire Wire Line
+	5250 3700 5250 3600
+Wire Wire Line
+	5250 3400 5350 3400
+Connection ~ 5250 3600
+$Comp
+L dmx-shutter-rescue:SN75176B U?
+U 1 1 573C7A9C
+P 5800 3200
+F 0 "U?" H 5800 3400 60  0000 C CNN
+F 1 "SN75176B" H 5800 3300 60  0000 C CNN
+F 2 "" H 5900 3200 60  0000 C CNN
+F 3 "" H 5900 3200 60  0000 C CNN
+	1    5800 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3600 5250 3600
+Wire Wire Line
+	4000 4000 5350 4000
+$Comp
+L dmx-shutter-rescue:XLR3 K?
+U 1 1 573C838A
+P 6600 2850
+F 0 "K?" H 6750 3100 50  0000 C CNN
+F 1 "XLR3" H 6800 2600 50  0000 C CNN
+F 2 "" H 6600 2850 50  0000 C CNN
+F 3 "" H 6600 2850 50  0000 C CNN
+	1    6600 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 573C8449
+P 6250 2850
+F 0 "#PWR?" H 6250 2600 50  0001 C CNN
+F 1 "GND" H 6250 2700 50  0000 C CNN
+F 2 "" H 6250 2850 50  0000 C CNN
+F 3 "" H 6250 2850 50  0000 C CNN
+	1    6250 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 3300 6600 3200
+Wire Wire Line
+	6950 2850 6950 3400
+$Comp
+L dmx-shutter-rescue:R R?
+U 1 1 573C874B
+P 3850 2100
+F 0 "R?" V 3930 2100 50  0000 C CNN
+F 1 "1 k" V 3850 2100 50  0000 C CNN
+F 2 "" V 3780 2100 50  0000 C CNN
+F 3 "" H 3850 2100 50  0000 C CNN
+	1    3850 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L dmx-shutter-rescue:LED D?
+U 1 1 573C88B9
+P 3500 2100
+F 0 "D?" H 3500 2200 50  0000 C CNN
+F 1 "LED" H 3500 2000 50  0000 C CNN
+F 2 "" H 3500 2100 50  0000 C CNN
+F 3 "" H 3500 2100 50  0000 C CNN
+	1    3500 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 2400 4000 2100
+$Comp
+L power:GND #PWR?
+U 1 1 573C88F7
+P 3300 2100
+F 0 "#PWR?" H 3300 1850 50  0001 C CNN
+F 1 "GND" H 3300 1950 50  0000 C CNN
+F 2 "" H 3300 2100 50  0000 C CNN
+F 3 "" H 3300 2100 50  0000 C CNN
+	1    3300 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L dmx-shutter-rescue:BC547 Q?
+U 1 1 573C8C23
+P 6500 4700
+F 0 "Q?" H 6700 4775 50  0000 L CNN
+F 1 "BC547" H 6700 4700 50  0000 L CNN
+F 2 "TO-92" H 6700 4625 50  0000 L CIN
+F 3 "" H 6500 4700 50  0000 L CNN
+	1    6500 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L dmx-shutter-rescue:CONN_01X02 P?
+U 1 1 573C8E60
+P 6800 4250
+F 0 "P?" H 6800 4400 50  0000 C CNN
+F 1 "CONN_01X02" V 6900 4250 50  0000 C CNN
+F 2 "" H 6800 4250 50  0000 C CNN
+F 3 "" H 6800 4250 50  0000 C CNN
+	1    6800 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 4500 6600 4300
+Text Notes 6050 5350 0    60   ~ 0
+TODO: How should this external \ndvd player tray button be connected?
+$Comp
+L power:GND #PWR?
+U 1 1 573C8ECE
+P 6600 4900
+F 0 "#PWR?" H 6600 4650 50  0001 C CNN
+F 1 "GND" H 6600 4750 50  0000 C CNN
+F 2 "" H 6600 4900 50  0000 C CNN
+F 3 "" H 6600 4900 50  0000 C CNN
+	1    6600 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L dmx-shutter-rescue:R R?
+U 1 1 573C8FB5
+P 6150 4700
+F 0 "R?" V 6230 4700 50  0000 C CNN
+F 1 "10 k" V 6150 4700 50  0000 C CNN
+F 2 "" V 6080 4700 50  0000 C CNN
+F 3 "" H 6150 4700 50  0000 C CNN
+	1    6150 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L dmx-shutter-rescue:Crystal Y?
+U 1 1 573C903F
+P 4350 3050
+F 0 "Y?" H 4350 3200 50  0000 C CNN
+F 1 "Crystal" H 4350 2900 50  0000 C CNN
+F 2 "" H 4350 3050 50  0000 C CNN
+F 3 "" H 4350 3050 50  0000 C CNN
+	1    4350 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4000 4200 4850 4200
+Wire Wire Line
+	4850 4200 4850 4700
+Wire Wire Line
+	4850 4700 6000 4700
+$Comp
+L dmx-shutter-rescue:C C?
+U 1 1 573C9911
+P 4800 2900
+F 0 "C?" H 4825 3000 50  0000 L CNN
+F 1 "20 pF" H 4825 2800 50  0000 L CNN
+F 2 "" H 4838 2750 50  0000 C CNN
+F 3 "" H 4800 2900 50  0000 C CNN
+	1    4800 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L dmx-shutter-rescue:C C?
+U 1 1 573C9AEE
+P 4800 3200
+F 0 "C?" H 4825 3300 50  0000 L CNN
+F 1 "20 pF" H 4825 3100 50  0000 L CNN
+F 2 "" H 4838 3050 50  0000 C CNN
+F 3 "" H 4800 3200 50  0000 C CNN
+	1    4800 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 573C9B35
+P 4600 3050
+F 0 "#PWR?" H 4600 2800 50  0001 C CNN
+F 1 "GND" H 4600 2900 50  0000 C CNN
+F 2 "" H 4600 3050 50  0000 C CNN
+F 3 "" H 4600 3050 50  0000 C CNN
+	1    4600 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3350 4800 3350
+Wire Wire Line
+	4350 3350 4350 3200
+Wire Wire Line
+	4350 2750 4800 2750
+Wire Wire Line
+	4350 2750 4350 2900
+Wire Wire Line
+	6300 3300 6600 3300
+Wire Wire Line
+	6950 3400 6300 3400
+Wire Wire Line
+	4800 3050 4600 3050
+Wire Wire Line
+	4000 3100 4100 3100
+Wire Wire Line
+	4100 3100 4100 3200
+Wire Wire Line
+	4100 3200 4350 3200
+Wire Wire Line
+	4000 3000 4100 3000
+Wire Wire Line
+	4100 3000 4100 2900
+Wire Wire Line
+	4100 2900 4350 2900
+Wire Wire Line
+	5250 3600 5250 3400
+$EndSCHEMATC
