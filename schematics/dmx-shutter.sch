@@ -1,35 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:oturpe-kicad-lib
-EELAYER 25 0
+EESchema Schematic File Version 4
+LIBS:dmx-shutter-cache
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -44,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ATMEGA88PA-P IC?
+L dmx-shutter-rescue:ATMEGA88PA-P IC?
 U 1 1 573C797E
 P 3000 3500
 F 0 "IC?" H 2250 4750 50  0000 L BNN
@@ -55,7 +26,7 @@ F 3 "" H 3000 3500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 573C7AE5
 P 2100 4700
 F 0 "#PWR?" H 2100 4450 50  0001 C CNN
@@ -68,7 +39,7 @@ $EndComp
 Wire Wire Line
 	2100 4700 2100 4600
 $Comp
-L +5V #PWR?
+L power:+5V #PWR?
 U 1 1 573C7BB7
 P 2100 2400
 F 0 "#PWR?" H 2100 2250 50  0001 C CNN
@@ -81,7 +52,7 @@ $EndComp
 Wire Wire Line
 	2100 2700 2100 2400
 $Comp
-L C C?
+L dmx-shutter-rescue:C C?
 U 1 1 573C7BD4
 P 1950 2550
 F 0 "C?" H 1850 2650 50  0000 L CNN
@@ -92,7 +63,7 @@ F 3 "" H 1950 2550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 573C7C11
 P 1950 2700
 F 0 "#PWR?" H 1950 2450 50  0001 C CNN
@@ -105,7 +76,7 @@ $EndComp
 Wire Wire Line
 	2100 2400 1950 2400
 $Comp
-L +5V #PWR?
+L power:+5V #PWR?
 U 1 1 573C7DD3
 P 5350 3300
 F 0 "#PWR?" H 5350 3150 50  0001 C CNN
@@ -116,7 +87,7 @@ F 3 "" H 5350 3300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 573C7E04
 P 5250 3700
 F 0 "#PWR?" H 5250 3450 50  0001 C CNN
@@ -129,12 +100,12 @@ $EndComp
 Wire Wire Line
 	5350 3700 5250 3700
 Wire Wire Line
-	5250 3700 5250 3400
+	5250 3700 5250 3600
 Wire Wire Line
 	5250 3400 5350 3400
 Connection ~ 5250 3600
 $Comp
-L SN75176B U?
+L dmx-shutter-rescue:SN75176B U?
 U 1 1 573C7A9C
 P 5800 3200
 F 0 "U?" H 5800 3400 60  0000 C CNN
@@ -149,7 +120,7 @@ Wire Wire Line
 Wire Wire Line
 	4000 4000 5350 4000
 $Comp
-L XLR3 K?
+L dmx-shutter-rescue:XLR3 K?
 U 1 1 573C838A
 P 6600 2850
 F 0 "K?" H 6750 3100 50  0000 C CNN
@@ -160,7 +131,7 @@ F 3 "" H 6600 2850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 573C8449
 P 6250 2850
 F 0 "#PWR?" H 6250 2600 50  0001 C CNN
@@ -175,7 +146,7 @@ Wire Wire Line
 Wire Wire Line
 	6950 2850 6950 3400
 $Comp
-L R R?
+L dmx-shutter-rescue:R R?
 U 1 1 573C874B
 P 3850 2100
 F 0 "R?" V 3930 2100 50  0000 C CNN
@@ -186,7 +157,7 @@ F 3 "" H 3850 2100 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L LED D?
+L dmx-shutter-rescue:LED D?
 U 1 1 573C88B9
 P 3500 2100
 F 0 "D?" H 3500 2200 50  0000 C CNN
@@ -199,7 +170,7 @@ $EndComp
 Wire Wire Line
 	4000 2400 4000 2100
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 573C88F7
 P 3300 2100
 F 0 "#PWR?" H 3300 1850 50  0001 C CNN
@@ -210,7 +181,7 @@ F 3 "" H 3300 2100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BC547 Q?
+L dmx-shutter-rescue:BC547 Q?
 U 1 1 573C8C23
 P 6500 4700
 F 0 "Q?" H 6700 4775 50  0000 L CNN
@@ -221,7 +192,7 @@ F 3 "" H 6500 4700 50  0000 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 P?
+L dmx-shutter-rescue:CONN_01X02 P?
 U 1 1 573C8E60
 P 6800 4250
 F 0 "P?" H 6800 4400 50  0000 C CNN
@@ -236,7 +207,7 @@ Wire Wire Line
 Text Notes 6050 5350 0    60   ~ 0
 TODO: How should this external \ndvd player tray button be connected?
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 573C8ECE
 P 6600 4900
 F 0 "#PWR?" H 6600 4650 50  0001 C CNN
@@ -247,7 +218,7 @@ F 3 "" H 6600 4900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R?
+L dmx-shutter-rescue:R R?
 U 1 1 573C8FB5
 P 6150 4700
 F 0 "R?" V 6230 4700 50  0000 C CNN
@@ -258,7 +229,7 @@ F 3 "" H 6150 4700 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Crystal Y?
+L dmx-shutter-rescue:Crystal Y?
 U 1 1 573C903F
 P 4350 3050
 F 0 "Y?" H 4350 3200 50  0000 C CNN
@@ -275,7 +246,7 @@ Wire Wire Line
 Wire Wire Line
 	4850 4700 6000 4700
 $Comp
-L C C?
+L dmx-shutter-rescue:C C?
 U 1 1 573C9911
 P 4800 2900
 F 0 "C?" H 4825 3000 50  0000 L CNN
@@ -286,7 +257,7 @@ F 3 "" H 4800 2900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C?
+L dmx-shutter-rescue:C C?
 U 1 1 573C9AEE
 P 4800 3200
 F 0 "C?" H 4825 3300 50  0000 L CNN
@@ -297,7 +268,7 @@ F 3 "" H 4800 3200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 573C9B35
 P 4600 3050
 F 0 "#PWR?" H 4600 2800 50  0001 C CNN
@@ -333,4 +304,6 @@ Wire Wire Line
 	4100 3000 4100 2900
 Wire Wire Line
 	4100 2900 4350 2900
+Wire Wire Line
+	5250 3600 5250 3400
 $EndSCHEMATC
